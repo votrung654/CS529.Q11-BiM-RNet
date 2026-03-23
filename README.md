@@ -1,11 +1,11 @@
 <p align="center">
-  <a href="https://www.uit.edu.vn/" title="Trường Đại học Công nghệ Thông tin" style="border: 5;">
-    <img src="https://i.imgur.com/WmMnSRt.png" alt="Trường Đại học Công nghệ Thông tin | University of Information Technology">
+  <a href="https://www.uit.edu.vn/" title="University of Information Technology" style="border: 5;">
+    <img src="https://i.imgur.com/WmMnSRt.png" alt="University of Information Technology">
   </a>
 </p>
 
 <!-- Title -->
-<h1 align="center"><b>CS529.Q11 - CÁC VẤN ĐỀ NGHIÊN CỨU VÀ ỨNG DỤNG TRONG KHOA HỌC MÁY TÍNH</b></h1>
+<h1 align="center"><b>CS529.Q11 - RESEARCH ISSUES AND APPLICATIONS IN COMPUTER SCIENCE</b></h1>
 
 <p align="center">
     <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch-2.x-EE4C2C.svg?style=flat-square" alt="PyTorch"></a>
@@ -14,87 +14,87 @@
 
 </p>
 
-## MỤC LỤC
-* [Giới thiệu môn học](#gioi-thieu-mon-hoc)
-* [Giảng viên hướng dẫn](#giang-vien-huong-dan)
-* [Sinh viên thực hiện](#sinh-vien-thuc-hien)
-* [Đồ án](#do-an)
-* [Yêu cầu hệ thống](#yeu-cau-he-thong)
-* [Cài đặt môi trường](#cai-dat-moi-truong)
-* [Lưu ý cấu hình quan trọng](#luu-y-cau-hinh-quan-trong)
-* [Dữ liệu](#du-lieu)
-* [Mô hình huấn luyện sẵn](#mo-hinh-huan-luyen-san)
-* [Đánh giá](#danh-gia)
-* [Huấn luyện](#huan-luyen)
+## TABLE OF CONTENTS
+* [Course Introduction](#course-introduction)
+* [Instructor](#instructor)
+* [Students](#students)
+* [Project](#project)
+* [System Requirements](#system-requirements)
+* [Environment Setup](#environment-setup)
+* [Important Configuration Notes](#important-configuration-notes)
+* [Data](#data)
+* [Pre-trained Models](#pre-trained-models)
+* [Evaluation](#evaluation)
+* [Training](#training)
 * [Demo](#demo)
-  - [Demo dòng lệnh](#demo-dong-lenh)
+  - [Command Line Demo](#command-line-demo)
   - [Web Demo](#web-demo)
-* [Kaggle Notebook](#kaggle-notebook)
-* [Tham khảo](#tham-khao)
+* [Kaggle Notebooks](#kaggle-notebooks)
+* [References](#references)
 
-## GIỚI THIỆU MÔN HỌC
-<a name="gioi-thieu-mon-hoc"></a>
-* **Tên môn học**: Các vấn đề nghiên cứu và ứng dụng trong Khoa học máy tính
-* **Mã môn học**: CS529
-* **Mã lớp**: CS529.Q11
-* **Ngày bắt đầu**: 08/09/2025
-* **Năm học**: 2025 - 2026
+## COURSE INTRODUCTION
+<a name="course-introduction"></a>
+* **Course Name**: Research Issues and Applications in Computer Science
+* **Course Code**: CS529
+* **Class Code**: CS529.Q11
+* **Start Date**: 09/08/2025
+* **Academic Year**: 2025 - 2026
 
-## GIẢNG VIÊN HƯỚNG DẪN
-<a name="giang-vien-huong-dan"></a>
-* **ThS. Đỗ Văn Tiến** - *tiendv@uit.edu.vn*
+## INSTRUCTOR
+<a name="instructor"></a>
+* **MSc. Do Van Tien** - *tiendv@uit.edu.vn*
 
-## SINH VIÊN THỰC HIỆN
-<a name="sinh-vien-thuc-hien"></a>
-| MSSV | Họ và tên | Github | Email |
+## STUDENTS
+<a name="students"></a>
+| Student ID | Full Name | Github | Email |
 |:----------:|:-------------------:|:----------------------------------------------------:|:-----------------------:|
-| 22521587   | Trương Phúc Trường  | [Truong99zvc](https://github.com/Truong99zvc/)      | 22521587@gm.uit.edu.vn  |
-| 22521571   | Võ Đình Trung       | [votrung654](https://github.com/votrung654/)         | 22521571@gm.uit.edu.vn  |
+| 22521587   | Truong Phuc Truong  | [Truong99zvc](https://github.com/Truong99zvc/)      | 22521587@gm.uit.edu.vn  |
+| 22521571   | Vo Dinh Trung       | [votrung654](https://github.com/votrung654/)         | 22521571@gm.uit.edu.vn  |
 
-## ĐỒ ÁN
-<a name="do-an"></a>
-**Tên đồ án**: ĐÁNH GIÁ, TÁI LẬP VÀ MỞ RỘNG PHƯƠNG PHÁP NỘI SUY KHUNG HÌNH VIDEO DỰA TRÊN TRƯỜNG CHUYỂN ĐỘNG HAI CHIỀU CHO CÁC KỊCH BẢN CHUYỂN ĐỘNG PHỨC TẠP
+## PROJECT
+<a name="project"></a>
+**Project Name**: EVALUATION, REPRODUCTION, AND EXTENSION OF TWO-DIMENSIONAL MOTION FIELD-GUIDED VIDEO FRAME INTERPOLATION FOR COMPLEX MOTION SCENARIOS
 
-**Dự án này là kết quả của quá trình tái lập (reproduce), đánh giá và mở rộng (extension) dựa trên nghiên cứu:**
+**This project is the result of reproduction, evaluation, and extension based on the research:**
 > **BiM-VFI: Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions**
-> *Tác giả: Wonyong Seo, Jihyong Oh, Munchurl Kim*
+> *Authors: Wonyong Seo, Jihyong Oh, Munchurl Kim*
 
-Repository này chứa mã nguồn cài đặt và đánh giá của hai mô hình:
-1.  **BiM-VFI (Reproduced)**: Phương pháp gốc từ paper, được tái lập hoàn chỉnh.
-2.  **BiM-RNet (Proposed/Extension)**: Kiến trúc đề xuất cải tiến, tăng hiệu suất và tối ưu hóa khả năng trích xuất đặc trưng trong các kịch bản chuyển động phức tạp.
+This repository contains the implementation and evaluation source code of two models:
+1.  **BiM-VFI (Reproduced)**: The original method from the paper, fully reproduced.
+2.  **BiM-RNet (Proposed/Extension)**: The proposed improved architecture, increasing performance and optimizing feature extraction capabilities in complex motion scenarios.
 
-**Đóng góp của nhóm sinh viên:**
-1.  **Tái lập (Reproducibility):** Huấn luyện lại mô hình BiM-VFI gốc từ đầu trên dataset Vimeo90K để kiểm chứng kết quả.
-2.  **Đề xuất cải tiến (Extension - BiM-RNet):** Thiết kế và cài đặt kiến trúc **BiM-RNet**, tận dụng sức mạnh của ResNet Encoder.
-3.  **Khắc phục lỗi tương thích:** Chỉnh sửa mã nguồn để chạy ổn định trên các môi trường hiện đại (Torch mới, CUDA mới) và hệ điều hành Windows.
-4.  **Phát triển Ứng dụng:** Tích hợp module **Web Demo** (Flask) cho phép tương tác trực quan.
-5.  **Tài liệu hóa:** Việt hóa và chi tiết hóa hướng dẫn sử dụng.
+**Student Group Contributions:**
+1.  **Reproducibility:** Retrained the original BiM-VFI model from scratch on the Vimeo90K dataset to verify the results.
+2.  **Proposed Extension (BiM-RNet):** Designed and implemented the **BiM-RNet** architecture, leveraging the power of ResNet Encoder.
+3.  **Compatibility Fixes:** Modified the source code to run stably on modern environments (new Torch, new CUDA) and the Windows operating system.
+4.  **Application Development:** Integrated a **Web Demo** module (Flask) for intuitive interaction.
+5.  **Documentation:** Detailed and translated the user guide.
 
-Mã nguồn cốt lõi dựa trên repo gốc của nhóm tác giả KAIST-VICLab.
+The core source code is based on the original repository of the authors' group KAIST-VICLab.
 
-## YÊU CẦU HỆ THỐNG
-<a name="yeu-cau-he-thong"></a>
-Để chạy mã nguồn ổn định, hệ thống cần đáp ứng các yêu cầu tối thiểu sau:
+## SYSTEM REQUIREMENTS
+<a name="system-requirements"></a>
+To run the source code stably, the system must meet the following minimum requirements:
 
-*   **Hệ điều hành**: Windows 10/11 (đã được nhóm test kỹ) hoặc Linux.
-*   **GPU (Quan trọng)**:
-    *   Bắt buộc **NVIDIA GPU** hỗ trợ CUDA.
-    *   **VRAM**: Tối thiểu **4GB** (Test trên GTX 1650 chạy ổn định với độ phân giải thấp/trung bình). Khuyến nghị **8GB+** để inference video HD/FullHD.
-    *   **Lưu ý**: Để huấn luyện (training), đặc biệt là BiM-RNet, khuyến nghị sử dụng GPU server mạnh (như Kaggle P100/T4x2 hoặc tốt hơn) vì 4GB VRAM không đủ cho batch size lớn.
-*   **CUDA Driver**: Cần cài đặt NVIDIA Driver phiên bản mới nhất tương thích với CUDA 11.8 trở lên.
-*   **RAM**: Tối thiểu 16GB (Quá trình xử lý video tốn nhiều RAM).
+*   **Operating System**: Windows 10/11 (thoroughly tested) or Linux.
+*   **GPU (Important)**:
+    *   **NVIDIA GPU** with CUDA support is mandatory.
+    *   **VRAM**: Minimum **4GB** (Tested stably on GTX 1650 at low/medium resolutions). Recommended **8GB+** for HD/FullHD video inference.
+    *   **Note**: For training, especially BiM-RNet, using a powerful GPU server (like Kaggle P100/T4x2 or better) is recommended as 4GB VRAM is insufficient for a large batch size.
+*   **CUDA Driver**: Requires the latest NVIDIA Driver compatible with CUDA 11.8 or higher.
+*   **RAM**: Minimum 16GB (Video processing consumes a lot of RAM).
 
-## CÀI ĐẶT MÔI TRƯỜNG
-<a name="cai-dat-moi-truong"></a>
+## ENVIRONMENT SETUP
+<a name="environment-setup"></a>
 
-### Yêu cầu tiên quyết
-Trước khi thiết lập môi trường, hãy đảm bảo đã cài đặt **Conda** trên hệ thống của mình. Có thể tải xuống và cài đặt Conda từ:
-- [Miniconda](https://docs.conda.io/en/latest/miniconda.html) (Khuyên dùng - nhẹ)
-- [Anaconda](https://www.anaconda.com/products/distribution) (Bản đầy đủ)
+### Prerequisites
+Before setting up the environment, ensure **Conda** is installed on your system. You can download and install Conda from:
+- [Miniconda](https://docs.conda.io/en/latest/miniconda.html) (Recommended - lightweight)
+- [Anaconda](https://www.anaconda.com/products/distribution) (Full version)
 
-### Thiết lập môi trường và cài đặt thư viện
+### Environment Setup and Library Installation
 
-> **Lưu ý quan trọng**: Các phiên bản thư viện trong repository này khác với repository gốc của BiM-VFI. Để đảm bảo khả năng tái lập và chạy ổn định trên các GPU phổ thông như **GTX 1650**, nhóm sử dụng phiên bản PyTorch mới nhất hỗ trợ CUDA 13.0.
+> **Important Note**: The library versions in this repository differ from the original BiM-VFI repository. To ensure reproducibility and stable execution on mainstream GPUs like **GTX 1650**, we use the latest PyTorch version supporting CUDA 13.0.
 
 ```bash
 conda create -n bimvfi python=3.11
@@ -103,121 +103,121 @@ pip install basicsr-fixed Ipython torchsummary wandb moviepy pyyaml imageio pack
 conda install cupy -c conda-forge
 ```
 
-### Thư viện bổ sung cho Web Demo
-Để chạy web demo, cần cài đặt thêm các thư viện sau:
+### Additional Libraries for Web Demo
+To run the web demo, install the following additional libraries:
 
 ```bash
 pip install flask werkzeug pillow scikit-image
 ```
 
-**Lưu ý**: `opencv-python` và `torch` đã được bao gồm trong thiết lập môi trường chính ở trên. Hãy đảm bảo đã cài đặt đầy đủ.
+**Note**: `opencv-python` and `torch` are already included in the main environment setup above. Ensure they are fully installed.
 
-## LƯU Ý CẤU HÌNH QUAN TRỌNG
-<a name="luu-y-cau-hinh-quan-trong"></a>
+## IMPORTANT CONFIGURATION NOTES
+<a name="important-configuration-notes"></a>
 
-### Biến môi trường KMP_DUPLICATE_LIB_OK
-Trong `main.py`, nhóm đã thêm cấu hình để giải quyết xung đột OpenMP:
+### Environment Variable KMP_DUPLICATE_LIB_OK
+In `main.py`, we added a configuration to resolve OpenMP conflicts:
 ```python
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 ```
-Biến môi trường này xử lý lỗi "OMP: Error #15: Initializing libiomp5md.dll..." thường gặp trên Windows khi dùng chung NumPy, PyTorch và OpenCV.
+This environment variable handles the "OMP: Error #15: Initializing libiomp5md.dll..." error commonly encountered on Windows when using NumPy, PyTorch, and OpenCV together.
 
-### Cấu hình đường dẫn tuyệt đối
+### Absolute Path Configuration
 
-Sau khi clone repository, **bắt buộc** phải sửa đổi đường dẫn dataset và model trong các file cấu hình `cfgs/*.yaml`. Các đường dẫn tương đối mặc định thường không hoạt động chính xác trên Windows và cần đổi sang **đường dẫn tuyệt đối**.
+After cloning the repository, you **must** modify the dataset and model paths in the `cfgs/*.yaml` configuration files. Default relative paths often do not work correctly on Windows and should be changed to **absolute paths**.
 
-#### Cho huấn luyện (`cfgs/bim_rnet.yaml` hoặc `cfgs/bim_vfi.yaml`):
+#### For Training (`cfgs/bim_rnet.yaml` or `cfgs/bim_vfi.yaml`):
 ```yaml
-# Trước (sẽ KHÔNG hoạt động)
+# Before (will NOT work)
 root_path: ../data/vimeo_triplet
 
-# Sau (ví dụ - điều chỉnh theo đường dẫn thực tế)
+# After (example - adjust to actual path)
 root_path: D:/Github/BiM-RNet/data/vimeo_triplet
 ```
 
-#### Cho đánh giá (`cfgs/bim_vfi_benchmark.yaml`):
+#### For Evaluation (`cfgs/bim_vfi_benchmark.yaml`):
 ```yaml
-# Trước
+# Before
 resume: ./save/bim_rnet_train_new__400_epochs_NEW/checkpoints/model_best.pth
 
-# Sau (ví dụ)
+# After (example)
 resume: D:/Github/BiM-RNet/save/bim_rnet_train_new__400_epochs_NEW/checkpoints/model_best.pth
 root_path: D:/Github/BiM-RNet/data/vimeo_triplet
 ```
 
-## DỮ LIỆU
-<a name="du-lieu"></a>
-### Tải xuống
-Dự án sử dụng dataset Vimeo90K cho huấn luyện và kiểm thử:
+## DATA
+<a name="data"></a>
+### Download
+The project uses the Vimeo90K dataset for training and testing:
 > - [Vimeo90K](https://cove.thecvf.com/datasets/875)
 
-### Chuẩn bị
-Sau khi tải xuống, giải nén và đặt trong thư mục `data` theo cấu trúc dự án. Nhóm sử dụng dataset Vimeo 90K-Triplet.
+### Preparation
+After downloading, extract it and place it in the `data` directory according to the project structure. We use the Vimeo 90K-Triplet dataset.
 
-## MÔ HÌNH HUẤN LUYỆN SẴN
-<a name="mo-hinh-huan-luyen-san"></a>
+## PRE-TRAINED MODELS
+<a name="pre-trained-models"></a>
 
-Repository này bao gồm các checkpoint:
+This repository includes checkpoints:
 
-### 1. Pretrained model gốc (BiM-VFI)
-- **Đường dẫn**: `pretrained/bim_vfi.pth`
-- **Mô tả**: Pretrained model gốc từ bài báo để so sánh và làm baseline.
+### 1. Original Pre-trained Model (BiM-VFI)
+- **Path**: `pretrained/bim_vfi.pth`
+- **Description**: Original pre-trained model from the paper for comparison and baseline.
 
 ### 2. BiM-RNet (Proposed Model)
-- **Đường dẫn**: `save/bim_rnet_train_new__400_epochs_NEW/checkpoints/model_best.pth`
-- **Mô tả**: Model cải tiến của nhóm, đã được huấn luyện trên Vimeo90K.
+- **Path**: `save/bim_rnet_train_new__400_epochs_NEW/checkpoints/model_best.pth`
+- **Description**: Our proposed improved model, trained on Vimeo90K.
 
-## ĐÁNH GIÁ
-<a name="danh-gia"></a>
-Việc đánh giá được cấu hình thông qua file `cfgs/bim_vfi_benchmark.yaml`.
+## EVALUATION
+<a name="evaluation"></a>
+Evaluation is configured through the `cfgs/bim_vfi_benchmark.yaml` file.
 
-*   **Config**: Điều chỉnh `name` (tên dataset) và `root_path` (đường dẫn tuyệt đối tới data) trong file cấu hình.
-*   **Model**: Đảm bảo tham số `resume` trỏ đến đúng checkpoint cần đánh giá (BiM-VFI gốc hoặc BiM-RNet).
+*   **Config**: Adjust `name` (dataset name) and `root_path` (absolute data path) in the configuration file.
+*   **Model**: Ensure the `resume` parameter points to the correct checkpoint to evaluate (original BiM-VFI or BiM-RNet).
 
-Chạy lệnh:
+Run the command:
 ```bash
 python main.py --cfg cfgs/bim_vfi_benchmark.yaml
 ```
 
-## HUẤN LUYỆN
-<a name="huan-luyen"></a>
-Dự án hỗ trợ huấn luyện cả model gốc BiM-VFI và model đề xuất BiM-RNet.
+## TRAINING
+<a name="training"></a>
+The project supports training both the original BiM-VFI model and the proposed BiM-RNet model.
 
-### 1. Huấn luyện BiM-RNet (Mô hình cải tiến)
-Sử dụng cấu hình `cfgs/bim_rnet.yaml`.
+### 1. Train BiM-RNet (Improved Model)
+Use configuration `cfgs/bim_rnet.yaml`.
 
-**Huấn luyện 1 GPU:**
+**1 GPU Training:**
 ```bash
 python main.py --cfg cfgs/bim_rnet.yaml
 ```
 
-**Huấn luyện đa GPU (Ví dụ 4 GPU: 0, 1, 2, 3):**
+**Multi-GPU Training (Example 4 GPUs: 0, 1, 2, 3):**
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node 4 main.py --cfg cfgs/bim_rnet.yaml
 ```
 
-### 2. Huấn luyện BiM-VFI (Mô hình gốc / Reproduce)
-Sử dụng cấu hình `cfgs/bim_vfi.yaml`.
+### 2. Train BiM-VFI (Original Model / Reproduce)
+Use configuration `cfgs/bim_vfi.yaml`.
 
-**Huấn luyện 1 GPU:**
+**1 GPU Training:**
 ```bash
 python main.py --cfg cfgs/bim_vfi.yaml
 ```
 
-**Huấn luyện đa GPU:**
+**Multi-GPU Training:**
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node 4 main.py --cfg cfgs/bim_vfi.yaml
 ```
 
-Để sử dụng **WandB** để theo dõi, điền thông tin vào `wandb.yaml` và thêm cờ `-w`.
+To use **WandB** for tracking, fill in the details in `wandb.yaml` and add the `-w` flag.
 
 ## DEMO
 <a name="demo"></a>
-### Demo dòng lệnh
-<a name="demo-dong-lenh"></a>
-Các video tùy chỉnh ở định dạng nhiều ảnh hoặc video có thể được nội suy như sau.
+### Command Line Demo
+<a name="command-line-demo"></a>
+Custom videos in multiple image or video formats can be interpolated as follows.
 
-Đầu tiên, thiết lập thư mục gốc demo như sau:
+First, set up the demo root directory like this:
   - video1.mp4 
   - video2.mp4
   - video3
@@ -225,51 +225,51 @@ Các video tùy chỉnh ở định dạng nhiều ảnh hoặc video có thể 
     - img1.png
     - ...
 
-Sau đó, thay thế `root_path` trong `cfgs/bim_vfi_demo.yaml` thành đường dẫn dữ liệu mong muốn, và chạy:
+Then, replace `root_path` in `cfgs/bim_vfi_demo.yaml` with your desired data path, and run:
 ```bash
 python main.py --cfg cfgs/bim_vfi_demo.yaml
 ```
 
 ### Web Demo
 <a name="web-demo"></a>
-Dự án bao gồm một giao diện demo dựa trên web để dễ dàng nội suy khung hình video, hỗ trợ tương tác trực quan.
+The project includes a web-based demo interface for easy video frame interpolation, supporting intuitive interaction.
 
-1.  **Điều hướng đến thư mục web_demo**:
+1.  **Navigate to the web_demo directory**:
     ```bash
     cd web_demo
     ```
-2.  **Chạy ứng dụng Flask**:
+2.  **Run the Flask application**:
     ```bash
     python app.py
     ```
-3.  **Truy cập giao diện web**:
-    Mở trình duyệt tại `http://localhost:5000`
+3.  **Access the web interface**:
+    Open a browser at `http://localhost:5000`
 
-**Tính năng:**
-*   **Nội suy cặp ảnh**: Tải lên 2 ảnh và tạo khung hình giữa.
-*   **Nội suy video**: Tăng frame rate cho video tải lên.
-*   **Nội suy chuỗi khung hình**: Xử lý mượt mà chuỗi nhiều ảnh.
-*   **Lựa chọn Model**: Tùy chọn chạy BiM-VFI (Gốc) hoặc BiM-RNet (Cải tiến).
-*   **Thống kê**: Xem thời gian xử lý thực tế.
+**Features:**
+*   **Image Pair Interpolation**: Upload 2 images to generate the intermediate frame.
+*   **Video Interpolation**: Increase frame rate for uploaded videos.
+*   **Frame Sequence Interpolation**: Smoothly process sequences of multiple images.
+*   **Model Selection**: Option to run BiM-VFI (Original) or BiM-RNet (Improved).
+*   **Statistics**: View real processing time.
 
-## KAGGLE NOTEBOOK
-<a name="kaggle-notebook"></a>
+## KAGGLE NOTEBOOKS
+<a name="kaggle-notebooks"></a>
 
-Đối với người dùng **có GPU không tương thích, không có GPU**, hoặc muốn huấn luyện/đánh giá trên cloud, nhóm cung cấp Kaggle notebook mẫu cho từng mô hình:
+For users **with incompatible GPUs, no GPUs**, or those who want to train/evaluate in the cloud, we provide sample Kaggle notebooks for each model:
 
-> **1. Notebook BiM-VFI (Reproduce)**: [https://www.kaggle.com/code/truong9/bim-vfi?scriptVersionId=289083440](https://www.kaggle.com/code/truong9/bim-vfi?scriptVersionId=289083440)
+> **1. BiM-VFI Notebook (Reproduce)**: [https://www.kaggle.com/code/truong9/bim-vfi?scriptVersionId=289083440](https://www.kaggle.com/code/truong9/bim-vfi?scriptVersionId=289083440)
 >
-> **2. Notebook BiM-RNet (Proposed)**: [https://www.kaggle.com/code/gtekx9/bim-rnet](https://www.kaggle.com/code/gtekx9/bim-rnet)
+> **2. BiM-RNet Notebook (Proposed)**: [https://www.kaggle.com/code/gtekx9/bim-rnet](https://www.kaggle.com/code/gtekx9/bim-rnet)
 
-**Lưu ý**: Các notebook đã được cấu hình sẵn môi trường và dataset (Vimeo90K) trên Kaggle, người dùng chỉ cần copy và run (sử dụng GPU P100 hoặc T4x2).
+**Note**: The notebooks are pre-configured with the environment and dataset (Vimeo90K) on Kaggle, users just need to copy and run (using P100 or T4x2 GPU).
 
-## THAM KHẢO
-<a name="tham-khao"></a>
-Đồ án sử dụng và mở rộng mã nguồn từ repository [KAIST-VICLab/BiM-VFI](https://github.com/KAIST-VICLab/BiM-VFI). Nhóm thực hiện xin gửi lời cảm ơn chân thành đến các tác giả.
+## REFERENCES
+<a name="references"></a>
+This project uses and extends source code from the [KAIST-VICLab/BiM-VFI](https://github.com/KAIST-VICLab/BiM-VFI) repository. We sincerely thank the authors.
 
-Mã nguồn được tham khảo, tinh chỉnh và phát triển nhằm mục đích nghiên cứu khoa học và học tập.
+The source code is referenced, refined, and developed for scientific research and educational purposes.
 
-Nếu sử dụng mã nguồn này cho nghiên cứu, vui lòng trích dẫn bài báo gốc:
+If using this source code for research, please cite the original paper:
 
 ```bibtex
 @inproceedings{Seo_2025_CVPR,
